@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -553,6 +554,13 @@
                         <span class="text-lg">Gubareva0202@yandex.ru</span>
                     </div>
                 </div>
+                
+                <!-- Дополнительная кнопка "Оставить заявку" -->
+                <div class="text-center">
+                    <button onclick="document.getElementById('quick-lead-modal').classList.remove('hidden')" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-all duration-300 shadow-lg">
+                        <i class="fas fa-paper-plane mr-2"></i>Оставить заявку
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -607,8 +615,8 @@
         });
 
         // Telegram Bot Integration
-        const BOT_TOKEN = '8358458278:AAHiL-MbT9rht84FWYAwWugL60pZ_upm8nQ';
-        const CHAT_ID = '1758575325'; // Замените на ваш реальный chat_id
+        const BOT_TOKEN = '7830586281:AAHEVDBIpZ_Zgh8WnRfsluyWKAxLH1VpU7I';
+        const CHAT_ID = '1813796944'; // Замените на ваш реальный chat_id
 
         document.getElementById('telegram-lead-form').addEventListener('submit', async function(e) {
             e.preventDefault();
@@ -669,3 +677,4 @@
     </script>
 </body>
 </html>
+```
