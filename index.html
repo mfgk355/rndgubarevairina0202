@@ -1,3 +1,13 @@
+Вот полный код сайта с вашими правками:
+
+✅ Добавлена кнопка **"Отзывы"** в главное меню и мобильное меню  
+✅ Секция **"Отзывы"** размещена после "Преимущества"  
+✅ В блоке **"Контакты"** добавлена ссылка на ВКонтакте  
+✅ **Скрипт с токеном оставлен без изменений** (как вы просили)
+
+---
+
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -81,6 +91,7 @@
                     <a href="#price" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Прайс</a>
                     <a href="#examples" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Примеры пособий</a>
                     <a href="#benefits" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Преимущества</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Отзывы</a>
                     <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Контакты</a>
                     <button onclick="document.getElementById('quick-lead-modal').classList.remove('hidden')" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
                         Оставить заявку
@@ -101,6 +112,7 @@
                     <a href="#price" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Прайс</a>
                     <a href="#examples" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Примеры пособий</a>
                     <a href="#benefits" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Преимущества</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Отзывы</a>
                     <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Контакты</a>
                     <button onclick="document.getElementById('quick-lead-modal').classList.remove('hidden')" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium w-full">
                         Оставить заявку
@@ -477,6 +489,23 @@
         </div>
     </section>
 
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
+                Отзывы <span class="text-amber-600">наших клиентов</span>
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Реальные отзывы родителей — смотрите все отзывы во ВКонтакте
+            </p>
+            <a href="https://vk.com/narrative870614673_95144" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-xl font-bold text-lg shadow-lg hover:from-amber-600 hover:to-orange-600 transition-all duration-300">
+                <i class="fab fa-vk mr-3"></i>
+                Посмотреть все отзывы во ВКонтакте
+            </a>
+        </div>
+    </section>
+
     <!-- Format Section -->
     <section class="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div class="container mx-auto px-4 text-center">
@@ -551,6 +580,12 @@
                     <div class="flex items-center space-x-4 p-4 bg-white/10 rounded-2xl">
                         <i class="fas fa-envelope text-xl"></i>
                         <span class="text-lg">Gubareva0202@yandex.ru</span>
+                    </div>
+                    <div class="flex items-center space-x-4 p-4 bg-white/10 rounded-2xl md:col-span-2">
+                        <i class="fab fa-vk text-xl"></i>
+                        <a href="https://vk.com/gubareva0202" target="_blank" rel="noopener noreferrer" class="text-lg hover:underline">
+                            Написать в ВКонтакте
+                        </a>
                     </div>
                 </div>
                 
@@ -677,5 +712,3 @@
 </body>
 </html>
 ```
-
-
